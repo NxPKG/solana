@@ -1,0 +1,29 @@
+{
+  "name": "airdrop-ts",
+  "module": "index.ts",
+  "type": "module",
+  "scripts": {
+    "ts": "bun scripts/run.ts",
+    "keygen": "bun keygen.ts",
+    "airdrop": "bun airdrop.ts",
+    "transfer": "bun transfer.ts",
+    "enroll": "bun enroll.ts"
+  },
+  "devDependencies": {
+    "@types/bun": "latest",
+    "ts-node": "^10.9.2"
+  },
+  "peerDependencies": {
+    "typescript": "^5.6.3"
+  },
+  "dependencies": {
+    "@coral-xyz/anchor": "^0.30.1",
+    "@solana/web3.js": "^1.95.3",
+    "@types/node": "^22.7.5",
+    "bigint-buffer": "^1.1.5",
+    "bs58": "^6.0.0"
+  },
+  "prettier": {
+    "semi": false
+  }
+}
